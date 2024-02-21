@@ -1,0 +1,105 @@
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.stopClock
+{
+    margin-top: 15vh;
+    font-family: cursive;
+    text-align: center;
+    color: white;
+    font-size: 3.5em;
+}
+
+.stopTime
+{
+    background-color: rgba(0, 0, 0, 0.466);
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid transparent;
+    display: inline-block;
+    font-family: monospace;
+}
+
+.buttons
+{
+    outline: none;
+    margin: 7px;
+    margin-top: 20px;
+    font-size: 0.5em;
+    cursor: pointer;
+    transition: all 0.4s;
+    border-radius: 6px;
+    color: white;
+}
+
+.start
+{
+    background-color: #51ff00;
+}
+
+.stop
+{
+    background-color: #0099ff
+}
+
+.reset
+{
+    background-color: tomato;
+}
+
+@media (min-width:729px)
+{
+    .start:hover
+    {
+        transform: scale(1.2);
+        background-color: #09922e;
+        border-color: #09922e;
+    }
+
+    .stop:hover
+    {
+        transform: scale(1.2);
+        background-color: #011aff;  
+        border-color: #011aff; 
+    }
+
+    .reset:hover
+    {
+        transform: scale(1.2);
+        background-color: #ef0638;
+        border-color: #ef0638;
+    }
+}
+
+@media (max-width:499px)
+{
+    .buttons
+    {
+        transition: all 0.2s;
+    }
+    .start:active
+    {
+        transform: scale(1.2);
+        background-color: #09922e;
+        border-color: #09922e;
+    }
+
+    .stop:active
+    {
+        transform: scale(1.2);
+        background-color: #011aff;  
+        border-color: #011aff;
+    }
+
+    .reset:active
+    {
+        transform: scale(1.2);
+        background-color: #ef0638;
+        border-color: #ef0638;
+    }
+}

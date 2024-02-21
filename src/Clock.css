@@ -1,0 +1,42 @@
+body
+{
+  padding: 0px;
+  background-image: url(background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(255, 255,255, 0.5);
+  background-blend-mode: luminosity;
+}
+
+.clock 
+{
+  margin-top: 20%;
+  font-family: cursive;
+  text-align: center;
+  color: white;
+  font-size: 4em;
+}
+
+.time
+{
+  backdrop-filter: blur(5px);
+  display: inline-block;
+}
+
+@media (max-width:599px) 
+{
+  .clock
+  {
+    margin-top: 20%;
+  }  
+}
+
+@media (min-width:999px) 
+{
+  .clock
+  {
+    margin-top: 6%;
+  } 
+}
